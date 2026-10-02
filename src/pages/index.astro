@@ -3,12 +3,12 @@ import { profile, experience, skills, projects } from "../data/profile";
 const year = new Date().getFullYear();
 ---
 
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{profile.name} | Portofolio</title>
+    <title>{profile.name} | Portfolio</title>
     <meta name="description" content={profile.tagline} />
   </head>
   <body>
@@ -16,20 +16,20 @@ const year = new Date().getFullYear();
       <a href="#" class="logo">{profile.name}</a>
       <nav>
         <a href="#about">About</a>
-        <a href="#pengalaman">Pengalaman</a>
-        <a href="#proyek">Proyek</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main class="wrap">
       <section class="hero">
-        <p class="eyebrow">Halo, aku</p>
+        <p class="eyebrow">Hey there, I'm</p>
         <h1>{profile.name}</h1>
         <p class="lead">{profile.tagline}</p>
         <div class="actions">
-          <a class="btn primary" href="#proyek">Lihat proyek</a>
-          <a class="btn" href="#kontak">Hubungi aku</a>
+          <a class="btn primary" href="#projects">Check my projects</a>
+          <a class="btn" href="#contact">Hit me up</a>
         </div>
       </section>
 
@@ -41,8 +41,8 @@ const year = new Date().getFullYear();
         </ul>
       </section>
 
-      <section id="pengalaman">
-        <h2>Pengalaman</h2>
+      <section id="experience">
+        <h2>Experience</h2>
         <div class="timeline">
           {experience.map((e) => (
             <article class="card">
@@ -59,8 +59,8 @@ const year = new Date().getFullYear();
         </div>
       </section>
 
-      <section id="proyek">
-        <h2>Proyek</h2>
+      <section id="projects">
+        <h2>Projects</h2>
         <div class="grid">
           {projects.map((p) => (
             <article class="card">
@@ -69,19 +69,19 @@ const year = new Date().getFullYear();
               <ul class="chips small">
                 {p.tags.map((t) => <li>{t}</li>)}
               </ul>
-              {p.url && <a href={p.url} target="_blank" rel="noopener">Lihat →</a>}
+              {p.url && <a href={p.url} target="_blank" rel="noopener">Check it out →</a>}
             </article>
           ))}
           <article class="card placeholder">
-            <h3>Game pertama</h3>
-            <p class="muted">Sedang dikerjakan. Nantikan ya!</p>
+            <h3>First game</h3>
+            <p class="muted">In the works. Stay tuned 👀</p>
           </article>
         </div>
       </section>
 
-      <section id="kontak">
-        <h2>Kontak</h2>
-        <p>Mau ngobrol atau kolaborasi? Temukan aku di sini:</p>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Wanna chat or collab? Slide into my links:</p>
         <div class="actions">
           {profile.links.map((l) => (
             <a class="btn" href={l.url} target="_blank" rel="noopener">{l.label}</a>

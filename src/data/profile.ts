@@ -3,10 +3,10 @@
 export const profile = {
   name: "Azihan",
   tagline:
-    "Mahasiswa Sistem Informasi di Uniska yang lagi belajar jadi game developer, sambil bekerja sebagai Admin Accounts Receivable di Campina Ice Cream.",
+    "Info Systems student at Uniska, lowkey grinding to become a game dev, while holding it down as an Accounts Receivable Admin at Campina Ice Cream.",
   about: [
-    "Aku Azihan, mahasiswa semester 1 Sistem Informasi di Uniska. Sehari-hari aku bekerja sebagai Admin Accounts Receivable di Campina Ice Cream, mengelola data piutang dengan Excel dan sistem internal perusahaan, jadi aku terbiasa kerja teliti dengan data.",
-    "Di luar itu, aku tertarik dengan dunia game development dan mulai belajar membuat game sendiri. Portofolio ini jadi tempat aku mencatat perjalanan karier, kuliah, dan proyek-proyek yang aku bikin.",
+    "Hey, I'm Azihan, a first-semester Information Systems student at Uniska. By day I'm an Accounts Receivable Admin at Campina Ice Cream, wrangling receivables data in Excel and the company's internal system, so yeah, I'm kinda obsessed with getting the numbers right.",
+    "Outside of that, I'm super into game dev and just started building my own games. This site is where I keep track of my career, college life, and whatever I'm cooking up next.",
   ],
   links: [
     { label: "GitHub", url: "https://github.com/Azihan-QQ" },
@@ -17,23 +17,23 @@ export const profile = {
 
 export const experience = [
   {
-    role: "Admin Accounts Receivable",
+    role: "Accounts Receivable Admin",
     place: "Campina Ice Cream",
-    period: "Sekarang",
+    period: "Now",
     points: [
-      "Mengelola dan mencatat data piutang pelanggan",
-      "Mengolah data dengan Excel dan sistem internal perusahaan",
+      "Managing and keeping customer receivables data on point",
+      "Crunching data in Excel and the company's internal system",
     ],
   },
   {
-    role: "Mahasiswa S1 Sistem Informasi",
+    role: "Information Systems Student (S1)",
     place: "Uniska",
-    period: "2026 sampai sekarang",
-    points: ["Semester 1"],
+    period: "2026 to now",
+    points: ["1st semester, just getting started"],
   },
 ];
 
-export const skills = ["Microsoft Excel", "Sistem internal Campina", "HTML", "Astro"];
+export const skills = ["Microsoft Excel", "Campina internal system", "HTML", "PHP", "Astro"];
 
 // Tambahkan proyek baru di sini.
 export const projects: {
@@ -43,9 +43,14 @@ export const projects: {
   url?: string;
 }[] = [
   {
-    title: "Website Portofolio",
-    description: "Website yang sedang kamu lihat ini, dibuat dengan Astro dan di-hosting gratis di GitHub Pages.",
+    title: "Portfolio Website",
+    description: "The site you're literally looking at rn. Built with Astro and hosted for free on GitHub Pages.",
     tags: ["Astro", "GitHub Pages"],
     url: "https://github.com/Azihan-QQ/azihan-qq.github.io",
+  },
+  {
+    title: "Cashier App (WIP)",
+    description: "A web-based cashier app for tracking orders, customers, and stock. Still cooking 🍳",
+    tags: ["PHP", "Bootstrap"],
   },
 ];
