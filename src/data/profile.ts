@@ -54,3 +54,21 @@ export const projects: {
     tags: ["PHP", "Bootstrap"],
   },
 ];
+
+// Tambahkan pendakian baru di sini. Taruh fotonya di folder public/hiking/.
+export const hikes: {
+  name: string;
+  elevation: string;
+  date: string;
+  story: string;
+  photo?: string;
+}[] = [
+  {
+    name: "Mt. Lumut",
+    elevation: "601 masl",
+    date: "Aug 16, 2026",
+    story:
+      "About 4 km from basecamp to the summit. Me and the squad ran out of supplies mid-hike, but we still pushed through. The view? Totally worth it 🌄",
+    photo: "/hiking/gunung-lumut.jpg",
+  },
+];
