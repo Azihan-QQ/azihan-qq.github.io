@@ -3,7 +3,7 @@
 export const profile = {
   name: "Azihan",
   tagline:
-    "Info Systems student at Uniska and Accounts Receivable Admin at Campina Ice Cream, currently locked in on building a few portfolio projects.",
+    "Info Systems student at Uniska University and Accounts Receivable Admin at Campina Ice Cream, currently locked in on building a few portfolio projects.",
   about: [
     "Hey, I'm Azihan, a first-semester Information Systems student at Uniska. By day I'm an Accounts Receivable Admin at Campina Ice Cream, wrangling receivables data in Excel and the company's internal system, so yeah, I'm kinda obsessed with getting the numbers right.",
     "Right now I'm focused on building out a few portfolio projects. This site is where I keep track of my career, college life, and whatever I'm cooking up next.",
