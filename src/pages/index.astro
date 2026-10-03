@@ -19,6 +19,12 @@ const year = new Date().getFullYear();
     <meta name="description" content={profile.tagline} />
   </head>
   <body>
+    <div class="bg" aria-hidden="true">
+      <video autoplay muted loop playsinline poster="/bg/wallpaper.jpg">
+        <source src="/bg/wallpaper.mp4" type="video/mp4" />
+        <source src="/bg/wallpaper.webm" type="video/webm" />
+      </video>
+    </div>
     <header class="nav">
       <a href="#" class="logo">
         <span class="logo-mark">A</span>
@@ -137,6 +143,17 @@ const year = new Date().getFullYear();
     --paper: #ffffff;
   }
   * { box-sizing: border-box; }
+
+  /* live wallpaper: video di belakang semua konten, ditimpa lapisan navy biar teks tetap kebaca */
+  .bg { position: fixed; inset: 0; z-index: -1; background: var(--bg) url("/bg/wallpaper.jpg") center / cover; }
+  .bg video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .bg::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(15, 34, 66, 0.55) 0%, rgba(15, 34, 66, 0.8) 45%, rgba(8, 21, 43, 0.92) 100%);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bg video { display: none; }
+  }
   html { scroll-behavior: smooth; }
   body {
     margin: 0;
