@@ -31,6 +31,12 @@ export const experience = [
     period: "2026 to now",
     points: ["1st semester, just getting started"],
   },
+  {
+    role: "Computer & Network Engineering (TKJ)",
+    place: "SMK Negeri 5 Banjarmasin",
+    period: "Graduated",
+    points: ["Vocational high school where I learned the basics of computer hardware and networking"],
+  },
 ];
 
 export const skills = ["Microsoft Excel", "Campina internal system", "HTML", "PHP", "Astro"];
